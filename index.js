@@ -8,12 +8,14 @@ app.use('/css', express.static('css'));
 app.use('/img', express.static('img'));
 app.use('/js', express.static('js'));
 
+var port = process.env.PORT || 8080;
+
 
 // viewed at http://localhost:8080
 app.get('/', function(req, res) {
     res.sendFile(path.join(__dirname + '/index.html'));
 });
 
-app.listen(8080, function(){
-    console.log("server listening on 8080");
+app.listen(port, function(){
+    console.log("server listening on port: "+ port);
 });
