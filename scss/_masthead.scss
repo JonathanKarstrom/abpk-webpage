@@ -5,6 +5,11 @@ header.masthead {
   background-image: url('../img/header2-small.jpg');
   background-position: center center;
   @include background-cover;
+
+  @media(max-width: 992px){
+    margin-top: 5rem;
+  }
+
   hr {
     margin-top: 30px;
     margin-bottom: 30px;
@@ -16,6 +21,7 @@ header.masthead {
     font-weight: 300;
   }
   @media (min-width: 768px) {
+    
     p {
       font-size: 1.15rem;
     }
