@@ -19,6 +19,10 @@ hr.light {
   border-color: $white;
 }
 
+.header-logo{
+  width: 186px;
+}
+
 a {
   color: $primary;
   @include transition-all;

@@ -24,6 +24,10 @@ hr.light {
   border-color: #fff;
 }
 
+.header-logo {
+  width: 186px;
+}
+
 a {
   color: #b31515;
   -webkit-transition: all 0.2s;
